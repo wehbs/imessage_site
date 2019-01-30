@@ -1,10 +1,21 @@
 :root {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 
 .memoji {
-  width: 120.5px;
-  height: 150px;
+  width: 60.25px;
+  height: 75px;
+}
+
+@media (min-width: 600px) {
+  :root {
+    font-size: 1.5rem;
+  }
+
+  .memoji {
+    width: 120.5px;
+    height: 150px;
+  }
 }
 
 @media (min-width: 900px) {
