@@ -4,14 +4,14 @@
  * Copyright (c) 2016 Jay Hill
  */
 
-window.onload = function () {
+window.onload = function() {
   var messagesEl = document.querySelector(".messages");
   var typingSpeed = 20;
   var loadingText = "<b>•</b><b>•</b><b>•</b>";
   var messageIndex = 0;
 
   // Change response based on the time of the day
-  var getCurrentTime = function () {
+  var getCurrentTime = function() {
     var date = new Date();
     var hours = date.getHours();
     var minutes = date.getMinutes();
@@ -22,28 +22,29 @@ window.onload = function () {
   };
 
   var messages = [
-    "😎",
+    "👋",
     "I'm Shamir Wehbe ✌️",
-    "I code  💻",
+    '<img class="memoji" src="img/memoji_1.png" alt="memoji">',
+    "I lead a team at ",
+    "I also code 💻",
     "Email me to learn more 📥",
     ' @ <a href="mailto:shamirwehbe@me.com">shamirwehbe@me.com</a>',
     '& check out my website <br> <a href="https://wehbsite.com">wehbsite.com</a>',
-    '<video width="300" height="300" autoplay muted controls><source src="img/animoji.m4v" type="video/mp4"></video>',
     ,
     getCurrentTime()
   ];
 
-  var getFontSize = function () {
+  var getFontSize = function() {
     return parseInt(
       getComputedStyle(document.body).getPropertyValue("font-size")
     );
   };
 
-  var pxToRem = function (px) {
+  var pxToRem = function(px) {
     return px / getFontSize() + "rem";
   };
 
-  var createBubbleElements = function (message, position) {
+  var createBubbleElements = function(message, position) {
     var bubbleEl = document.createElement("div");
     var messageEl = document.createElement("span");
     var loadingEl = document.createElement("span");
@@ -65,7 +66,7 @@ window.onload = function () {
     };
   };
 
-  var getDimentions = function (elements) {
+  var getDimentions = function(elements) {
     return (dimensions = {
       loading: {
         w: "4rem",
@@ -82,7 +83,7 @@ window.onload = function () {
     });
   };
 
-  var sendMessage = function (message, position) {
+  var sendMessage = function(message, position) {
     var loadingDuration =
       message.replace(/<(?:.|\n)*?>/gm, "").length * typingSpeed + 500;
     var elements = createBubbleElements(message, position);
@@ -133,18 +134,18 @@ window.onload = function () {
       duration: 300,
       loop: true,
       direction: "alternate",
-      delay: function (i) {
+      delay: function(i) {
         return i * 100 + 50;
       }
     });
-    setTimeout(function () {
+    setTimeout(function() {
       loadingLoop.pause();
       dotsPulse.restart({
         opacity: 0,
         scale: 0,
         loop: false,
         direction: "forwards",
-        update: function (a) {
+        update: function(a) {
           if (
             a.progress >= 65 &&
             elements.bubble.classList.contains("is-loading")
@@ -164,7 +165,7 @@ window.onload = function () {
         height: [dimensions.loading.h, dimensions.bubble.h],
         marginTop: 0,
         marginLeft: 0,
-        begin: function () {
+        begin: function() {
           if (messageIndex < messages.length)
             elements.bubble.classList.remove("cornered");
         }
@@ -172,7 +173,7 @@ window.onload = function () {
     }, loadingDuration - 50);
   };
 
-  var sendMessages = function () {
+  var sendMessages = function() {
     var message = messages[messageIndex];
     if (!message) return;
     sendMessage(message);
@@ -180,7 +181,7 @@ window.onload = function () {
     setTimeout(
       sendMessages,
       message.replace(/<(?:.|\n)*?>/gm, "").length * typingSpeed +
-      anime.random(900, 1200)
+        anime.random(900, 1200)
     );
   };
 

@@ -1,22 +1,31 @@
 :root {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
 }
 
-@media (min-width: 600px) {
-  :root {
-    font-size: 1.5rem;
-  }
+.memoji {
+  width: 120.5px;
+  height: 150px;
 }
 
 @media (min-width: 900px) {
   :root {
     font-size: 1.75rem;
   }
+
+  .memoji {
+    width: 180.75px;
+    height: 225px;
+  }
 }
 
 @media (min-width: 1200px) {
   :root {
     font-size: 2rem;
+  }
+
+  .memoji {
+    width: 241px;
+    height: 300px;
   }
 }
 
@@ -96,7 +105,7 @@ body {
 }
 
 /* white background for the animoji */
-body>div>div:nth-child(13) {
+body>div>div:nth-child(5) {
   background: #ffffff !important;
 }
 
