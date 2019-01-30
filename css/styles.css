@@ -7,7 +7,7 @@
   height: 75px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 375px) {
   :root {
     font-size: 1.5rem;
   }
