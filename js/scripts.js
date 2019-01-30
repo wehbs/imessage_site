@@ -27,7 +27,7 @@ window.onload = function () {
     "I code  💻",
     "Email me to learn more 📥",
     ' @ <a href="mailto:shamirwehbe@me.com">shamirwehbe@me.com</a>',
-    '& check out my website <br> <a href="wehbsite.com">wehbsite.com</a>',
+    '& check out my website <br> <a href="https://wehbsite.com">wehbsite.com</a>',
     '<video width="300" height="300" autoplay muted controls><source src="img/animoji.m4v" type="video/mp4"></video>',
     ,
     getCurrentTime()
