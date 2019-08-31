@@ -25,7 +25,7 @@ window.onload = function() {
     "👋",
     "I'm Shamir Wehbe ✌️",
     '<img class="memoji" src="img/memoji_1.png" alt="memoji">',
-    "I lead a team at ",
+    'I am a Product Expert at <br> <a href="https://compass.com" target="_blank">Compass</a>',
     "I also code 💻",
     "Email me to learn more 📥",
     ' @ <a href="mailto:shamirwehbe@me.com">shamirwehbe@me.com</a>',
