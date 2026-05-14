@@ -25,10 +25,10 @@ window.onload = function() {
     "👋",
     "I'm Shamir Wehbe ✌️",
     '<img class="memoji" src="img/memoji_1.png" alt="memoji">',
-    'I am a Product Support Engineer at <br> <a href="https://axon.com" target="_blank">Axon</a>',
+    'I am a Sales Engineer II at <br> <a href="https://axon.com" target="_blank">Axon</a>',
     "I also code 💻",
     "Email me to learn more 📥",
-    ' @ <a href="mailto:shamirwehbe@me.com">shamirwehbe@me.com</a>',
+    ' @ <a href="mailto:shamirwehbe@gmail.com">shamirwehbe@gmail.com</a>',
     '& check out my website <br> <a href="https://wehbsite.com">wehbsite.com</a>',
     ,
     getCurrentTime()
