@@ -26,7 +26,7 @@ window.onload = function() {
     "I'm Shamir Wehbe ✌️",
     '<img class="memoji" src="img/memoji_1.png" alt="memoji">',
     'I am a Sales Engineer II at <br> <a href="https://axon.com" target="_blank">Axon</a>',
-    "I also code 💻",
+    'I also code 💻 — I built <a href="https://apps.apple.com/us/app/span-countdown-time-tracker/id6759741231" target="_blank">Span</a> on the App Store',
     "Email me to learn more 📥",
     ' @ <a href="mailto:shamirwehbe@gmail.com">shamirwehbe@gmail.com</a>',
     '& check out my website <br> <a href="https://wehbsite.com">wehbsite.com</a>',
